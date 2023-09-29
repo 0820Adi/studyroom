@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Toolbar with Back Button and User Info -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_back_hand_24"
+            android:layout_gravity="start"
+            android:contentDescription="Back" />
+
+        <!-- User Icon ImageView -->
+        <ImageView
+            android:id="@+id/imageUserIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_person_2_24"
+            android:layout_gravity="center"
+            android:contentDescription="User Icon" />
+
+        <!-- User Name TextView -->
+        <TextView
+            android:id="@+id/textUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aditya"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="56dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- RecyclerView for Chat Messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp" />
+
+    <!-- Message Input Layout -->
+    <RelativeLayout
+        android:id="@+id/layout_message_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <!-- Message Input EditText -->
+        <EditText
+            android:id="@+id/edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type a message"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:layout_toStartOf="@+id/button_send" />
+
+        <!-- Send Button -->
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/lavender"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="text_view_event_name" type="id" />
+    <item name="text_view_event_time" type="id" />
+    <item name="text_view_event_location" type="id" />
+    <item name="text_view_event_category" type="id" />
+</resources>

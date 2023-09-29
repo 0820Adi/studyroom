@@ -1,0 +1,9 @@
+<!-- res/values/event_filters.xml -->
+<resources>
+    <string-array name="event_filters">
+        <item>All</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <!-- Add more categories as needed -->
+    </string-array>
+</resources>

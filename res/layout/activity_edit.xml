@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Group Name -->
+    <EditText
+        android:id="@+id/edit_text_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Group Name"
+        android:background="@drawable/lavender_border"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Group Description -->
+    <EditText
+        android:id="@+id/edit_text_group_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Group Description"
+        android:background="@drawable/lavender_border"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/edit_text_group_name"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Group Profile Picture -->
+    <ImageView
+        android:id="@+id/image_view_group_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_group_24"
+        android:layout_below="@id/edit_text_group_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_upload_profile_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Profile Picture"
+        android:layout_below="@id/image_view_group_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Add Members Button -->
+    <Button
+        android:id="@+id/btn_add_members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Members"
+        android:layout_below="@id/btn_upload_profile_picture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tags or Categories -->
+    <EditText
+        android:id="@+id/edit_text_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tags or Categories (comma-separated)"
+        android:inputType="text"
+        android:layout_below="@id/btn_add_members"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Location Selector (if applicable) -->
+    <Spinner
+        android:id="@+id/spinner_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Location"
+        android:layout_below="@id/edit_text_tags"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Privacy Settings -->
+    <RadioGroup
+        android:id="@+id/radio_group_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/spinner_location"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public"/>
+
+        <RadioButton
+            android:id="@+id/radio_invite_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite-Only"/>
+
+        <RadioButton
+            android:id="@+id/radio_password_protected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password-Protected"/>
+
+        <!-- Add more privacy options as needed -->
+
+    </RadioGroup>
+
+    <!-- Group Rules and Guidelines -->
+    <EditText
+        android:id="@+id/edit_text_group_rules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Group Rules and Guidelines"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/radio_group_privacy"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Group Tags -->
+    <EditText
+        android:id="@+id/edit_text_group_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Group Tags (comma-separated)"
+        android:inputType="text"
+        android:layout_below="@id/edit_text_group_rules"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Custom Themes (if applicable) -->
+    <Button
+        android:id="@+id/btn_custom_themes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Themes"
+        android:layout_below="@id/edit_text_group_tags"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Save Changes Button -->
+    <Button
+        android:id="@+id/btn_save_changes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:layout_below="@id/btn_custom_themes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Delete Group Button -->
+    <Button
+        android:id="@+id/btn_delete_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Group"
+        android:layout_below="@id/btn_save_changes"
+        android:layout_centerHorizontal="true"/>
+
+</ScrollView>

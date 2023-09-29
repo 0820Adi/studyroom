@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".materialmanagement.MaterialActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/material_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Activity"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        app:cornerRadius="4dp"
+        app:backgroundTint="@color/lavender"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Additional UI Elements -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/material_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a Material Activity example."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/material_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/material_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter something"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:cornerRadius="4dp"
+        app:backgroundTint="@color/lavender"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

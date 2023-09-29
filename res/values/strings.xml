@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">studyroom</string>
+    <string name="app_logo_description">App Logo</string>
+    <!-- res/values/strings.xml -->
+    <string name="group_name_colon">Group Name:</string>
+    <string name="course_name_colon">Course Name:</string>
+    <!-- Add other string resources as needed -->
+    <string-array name="locations">
+        <item>Location 1</item>
+        <item>Location 2</item>
+        <item>Location 3</item>
+        <!-- Add more locations as needed -->
+    </string-array>
+
+
+</resources>

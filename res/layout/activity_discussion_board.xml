@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!-- Toolbar with Title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/text_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discussion Board"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- RecyclerView for Discussion Posts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_discussion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp" />
+
+    <!-- Floating Action Button for Creating New Post -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_create_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_movie_creation_24"
+        android:contentDescription="Create Post"
+        app:backgroundTint="@color/lavender" />
+
+    <!-- Text Field for Creating New Posts -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+        app:boxBackgroundMode="outline"
+        app:hintEnabled="true"
+        app:placeholderText="Write your post">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="your suggestion"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

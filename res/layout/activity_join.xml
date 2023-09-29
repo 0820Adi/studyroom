@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Group Code Input -->
+    <EditText
+        android:id="@+id/edit_text_group_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Group Code"
+        android:inputType="text"
+        android:background="@drawable/lavender_border"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Join Group Button -->
+    <Button
+        android:id="@+id/btn_join_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Group"
+        android:layout_below="@id/edit_text_group_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Or -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:textAlignment="center"
+        android:layout_below="@id/btn_join_group"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Create New Group Button -->
+    <Button
+        android:id="@+id/btn_create_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
